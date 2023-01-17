@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol SearchCellProtocol: AnyObject {
+    func displayCityName(title: String)
+}
+
+extension SearchCell: SearchCellProtocol {
+    func displayCityName(title: String) {
+        cityLbl.text = title
+    }
+}

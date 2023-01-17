@@ -19,10 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         setAppearance()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = AuthLoadingVCRouter.create()
+        window?.rootViewController = HomeVCRouter.create().toNavigation()
         window?.makeKeyAndVisible()
 
         return true
     }
 }
-

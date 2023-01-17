@@ -5,4 +5,6 @@
 //  Created by Khaled Bohout on 16/01/2023.
 //
 
-import Foundation
+class Constants {
+    static var baseUrl = "https://api.weatherapi.com/v1"
+}
